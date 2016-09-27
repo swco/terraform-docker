@@ -1,6 +1,6 @@
 FROM alpine:3.4
 
-RUN apk add --no-cache mysql-client wget unzip bash perl
+RUN apk update && apk add --no-cache mysql-client wget unzip bash perl openssh
 
 # Environment variables
 ENV TERRAFORM_VERSION="0.6.16" \
